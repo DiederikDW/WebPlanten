@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planten tracker</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <form id="plantenFormulier" style="margin-bottom: 20px; padding: 10px;">
+    <h2>Nieuwe plant toevoegen</h2>
+    
+    <select id="inputCategorie" required>
+        <option value="kamer">Kamerplant</option>
+        <option value="tuin">Tuinplant</option>
+    </select>
+    
+    <input type="text" id="inputNaam" placeholder="Naam" required />
+    <input type="text" id="inputExtra" placeholder="Soort (bijv. Gatenplant)" required />
+    <input type="text" id="inputWater" placeholder="Water/week" required />
+    
+    <button type="submit">Voeg plant toe!</button>
+  </form>
+
+  <h2>Mijn Kamerplanten:</h2>
+  <div id="kamerContainer"></div>
+
+  <h2>Mijn Tuinplanten:</h2>
+  <div id="tuinContainer"></div>
+
+  <!--script inladen als module-->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
